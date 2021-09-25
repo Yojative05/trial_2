@@ -12,3 +12,17 @@ body {
   background-position: center;
   background-size: cover;
 }
+
+.main-description {
+    text-align: center;
+    margin: 50px 0px 20px 0px;
+    font-size: 150%;
+}
+
+.main-jedi {
+    padding: 30px;
+}
+
+.main-hi {
+    padding: 20px;
+}
