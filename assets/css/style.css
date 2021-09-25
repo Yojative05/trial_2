@@ -7,13 +7,17 @@ body {
   font-weight: 100;
   color: #fff;
   line-height: 1.7rem;
-  background: no-repeat linear-gradient(250deg, #ff934f, #db222a);
+  background: no-repeat linear-gradient(250deg, #141414, #030303);
 }
 
 #main-image {
   background-image: url('../images/bckgrndimg.jpeg');
   background-position: center;
   background-size: cover;
+}
+
+h1 {
+  font-family: 'Gemuno', 'Open Sans';
 }
 
 .main-description {
@@ -34,8 +38,18 @@ body {
   margin: 1rem;
 }
 
+button.enter {
+  background: #0cf574;
+  color: #00000050;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  transition: all 0.4s;
+}
+
 .quiz-container {
-    background-image: none;
+    background-image: url('../images/quizbckgrnd5.jpeg');
+    background-position: center;
+    background-size: cover;
     box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
     text-shadow: 1px 1px white;
     padding: 3rem;
@@ -44,14 +58,12 @@ body {
     margin: 5rem auto;
     display: flex;
     flex-direction: column;
-    background: linear-gradient(360deg, transparent, #ffffff);
     min-height: 100vh;
   }
 
   .title {
     margin-top: 0;
     margin-bottom: 3rem;
-    color: #00000050;
     font-weight: 400;
     font-size: 2.5rem;
     text-align: center;
@@ -60,10 +72,11 @@ body {
   .question {
     margin: 2rem 0;
     font-size: 1.5rem;
+    color: #fff;
   }
   .option {
     padding: 1rem;
-    color: #00000095;
+    color: #fff;
     background: rgba(255, 255, 255, 0.1);
     width: 80%;
     border-radius: 5px;

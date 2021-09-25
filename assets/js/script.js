@@ -13,21 +13,21 @@ function myFunction() {
 const questions = [
     {
       "question": "Innocence",
-      "answer1": "I am innocent at alot of things",
+      "answer1": "I am innocent in alot of things",
       "answer1Total": "1",
       "answer2": "I am not that innocent as you think I am",
       "answer2Total": "2",
-      "answer3": "I think I well versed with my surroundings",
+      "answer3": "I think I am well versed with my surroundings",
       "answer3Total": "3"
     },
     {
       "question": "Training",
       "answer1": "I need to be trained with a group of people",
       "answer1Total": "1",
-      "answer2": "I need to be trained one to one",
-      "answer2Total": "2",
-      "answer3": "I don't need training, just supervision",
-      "answer3Total": "3"
+      "answer2": "I don't need training, just supervision",
+      "answer2Total": "3",
+      "answer3": "I need to be trained one to one",
+      "answer3Total": "2"
     },
     {
       "question": "Learning",
@@ -58,56 +58,56 @@ const questions = [
     },
     {
       "question": "What is your understanding of the Force?",
-      "answer1": "I have no idea",
+      "answer1": "I have limited idea, needs to learn more",
       "answer1Total": "1",
-      "answer2": "I know some, but needs to learn more",
+      "answer2": "I know some and can practice some",
       "answer2Total": "2",
       "answer3": "I have good knowledge, but not exceptional",
       "answer3Total": "3"
     },
     {
       "question": "What is your idea of peace?",
-      "answer1": "I intend not to create any misunderstandings",
-      "answer1Total": "1",
+      "answer1": "I keep peace in mind and body and in turn in actions and words",
+      "answer1Total": "3",
       "answer2": "I enjoying keeping the peace with actions, not just with words",
       "answer2Total": "2",
-      "answer3": "I keep peace in mind and body and in turn in actions and words",
-      "answer3Total": "3"
+      "answer3": "I intend not to create any misunderstandings",
+      "answer3Total": "1"
     },
     {
       "question": "Leadership Skills",
-      "answer1": "I see myself as a follower rather than a leader",
-      "answer1Total": "1",
-      "answer2": "I see myself as a diplomat or someone working in the government",
-      "answer2Total": "2",
+      "answer1": "I see myself as a diplomat or someone working in the government",
+      "answer1Total": "2",
+      "answer2": "I see myself as a follower rather than a leader",
+      "answer2Total": "1",
       "answer3": "I see myself able to train self and others",
       "answer3Total": "3"
     },
     {
       "question": "Lightsaber?",
-      "answer1": "Yes, I can show you how",
+      "answer1": "Yes, I can use it",
       "answer1Total": "1",
-      "answer2": "Yes, I can teach you how",
-      "answer2Total": "2",
-      "answer3": "Yes, and a few more weapons to use",
-      "answer3Total": "3"
+      "answer2": "Yes, and different weapons, too",
+      "answer2Total": "3",
+      "answer3": "Yes, I can show it",
+      "answer3Total": "2"
     },
     {
       "question": "What do you think about assassins?",
-      "answer1": "They are dangerous",
+      "answer1": "They are part of the dark-side of the force",
       "answer1Total": "1",
-      "answer2": "They are fierce",
+      "answer2": "They are Jedis in disguise",
       "answer2Total": "2",
-      "answer3": "They can be good or bad",
+      "answer3": "They can be either an ally or an enemy",
       "answer3Total": "3"
       }, 
       {
       "question": "Do you believe that the Force exists?",
-      "answer1": "In body and Spirit",
+      "answer1": "Yes, In body and Spirit",
       "answer1Total": "1",
-      "answer2": "In light and darkness",
+      "answer2": "Yes, In light and darkness",
       "answer2Total": "2",
-      "answer3": "In life and in death",
+      "answer3": "Yes, In life and in death",
       "answer3Total": "3"
       },
   ]
@@ -179,13 +179,12 @@ const questions = [
         result.innerHTML =
          `<h1 class="final-score">Your score: ${totalScore}</h1>
          <div class="summary">
-            <h1>Summary</h1>
+            <h1>Your Jedi Rank is:</h1>
             <p>Your JEDI Rank - based on your results:</p>
-            <p>32 - 33-  You are beyond the Force, there is no such thing!</p>
-            <p>30 - 31 - Jedi Master</p>
-            <p>27 - 29 - Jedi Sentinels</p>
-            <p>24 - 26 - Jedi Guardian</p>
-            <p>21 - 23 - Jedi Consular</p>
+            <p>32 - 33 - Jedi Master</p>
+            <p>29 - 31 - Jedi Sentinels</p>
+            <p>25 - 28 - Jedi Guardian</p>
+            <p>21 - 24 - Jedi Consular</p>
             <p>18 - 20 - Jedi Knights</p>
             <p>15 - 17 - Jedi Service Corps</p>
             <p>12 - 14 - Padawan </p>
@@ -219,3 +218,9 @@ function restartQuiz(e) {
     }
 
 }
+  
+  
+generateQuestions(currentQuestion);
+nextButton.addEventListener('click', loadNextQuestion);
+previousButton.addEventListener('click',loadPreviousQuestion);
+result.addEventListener('click',restartQuiz);
