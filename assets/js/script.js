@@ -9,7 +9,13 @@ function myFunction() {
     }
   }
 
-  // QUESTIONS
+window.addEventListener("keydown", event => {
+    if (event.keydown == 13) {
+    document.querySelector("#quizzes").style.display = "block"
+    }
+  })
+
+// QUESTIONS
 const questions = [
     {
       "question": "Innocence",

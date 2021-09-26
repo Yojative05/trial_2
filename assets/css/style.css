@@ -46,6 +46,10 @@ button.enter {
   transition: all 0.4s;
 }
 
+#quizzes {
+  display: none;
+}
+
 .quiz-container {
     background-image: url('../images/quizbckgrnd5.jpeg');
     background-position: center;
